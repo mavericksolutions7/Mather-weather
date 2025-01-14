@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Weather</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: white;
+        }
+        .weather-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+        .weather-card:hover {
+            transform: translateY(-5px);
+        }
+        .quote {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="quote">
+            "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle." - Steve Jobs
+        </div>
+        
+        <h1 class="text-4xl font-bold mb-8 text-center">Chicago Weather</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Today -->
+            <div class="weather-card p-6">
+                <h2 class="text-xl font-semibold mb-4">Today</h2>
+                <div class="text-5xl font-bold mb-4">31°F</div>
+                <div class="text-gray-300">Variable clouds with snow showers</div>
+                <div class="mt-4 text-sm text-gray-400">
+                    Wind: WSW 5-10 mph
+                </div>
+                <div class="mt-4 p-3 bg-opacity-25 bg-white rounded-lg">
+                    <h3 class="text-sm font-semibold mb-2">Recommended Outfit:</h3>
+                    <ul class="text-sm text-gray-300">
+                        <li>• Heavy winter coat</li>
+                        <li>• Insulated boots</li>
+                        <li>• Thermal base layer</li>
+                        <li>• Winter hat and gloves</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Tomorrow -->
+            <div class="weather-card p-6">
+                <h2 class="text-xl font-semibold mb-4">Tomorrow</h2>
+                <div class="text-5xl font-bold mb-4">34°F</div>
+                <div class="text-gray-300">Partly cloudy</div>
+                <div class="mt-4 text-sm text-gray-400">
+                    Wind: NW 8-12 mph
+                </div>
+                <div class="mt-4 p-3 bg-opacity-25 bg-white rounded-lg">
+                    <h3 class="text-sm font-semibold mb-2">Recommended Outfit:</h3>
+                    <ul class="text-sm text-gray-300">
+                        <li>• Winter parka</li>
+                        <li>• Warm sweater</li>
+                        <li>• Waterproof boots</li>
+                        <li>• Scarf and gloves</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Day After -->
+            <div class="weather-card p-6">
+                <h2 class="text-xl font-semibold mb-4">Wednesday</h2>
+                <div class="text-5xl font-bold mb-4">36°F</div>
+                <div class="text-gray-300">Mostly sunny</div>
+                <div class="mt-4 text-sm text-gray-400">
+                    Wind: W 5-8 mph
+                </div>
+                <div class="mt-4 p-3 bg-opacity-25 bg-white rounded-lg">
+                    <h3 class="text-sm font-semibold mb-2">Recommended Outfit:</h3>
+                    <ul class="text-sm text-gray-300">
+                        <li>• Light winter coat</li>
+                        <li>• Layered clothing</li>
+                        <li>• Comfortable boots</li>
+                        <li>• Light gloves</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 text-center text-gray-400 text-sm">
+            Last updated: January 13, 2025 12:00 PM CST
+        </div>
+    </div>
+</body>
+</html>
